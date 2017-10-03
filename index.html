@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Fórmulas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+  body {
+    font-family: sans-serif;
+  }
+  </style>
+</head>
+
+<body>
+  <h1>Física 140</h1>
+  <hr>
+  <h2>Ondas Electromagnéticas</h2>
+  $$
+    \phi_e (x, t) = E_0 cos(kx - wt) \hat{z}
+  $$
+  $$
+    \phi_b (x, t) = B_0 cos(kx - wt) \hat{y}
+  $$
+
+  $ \vec{E} $ es perpendicular a $ \vec{B} $
+
+  <h3>Vector de Poynting</h3>
+  Muestra la intensidad de la onda electromagnética, la magnitud es la
+  intensidad.
+  $$
+    S = \frac{1}{\mu_0} (\vec{E} \times \vec{B}) = \vec{E} \times \vec{H}
+  $$
+
+  <h3>Intensidad</h3>
+  $$
+    I = \left| \frac{1}{\mu_0} (\vec{E} \times \vec{B}) \right| = c \epsilon_0 E^2
+  $$
+  $$
+  \overline{I} = \frac{I}{2}
+  $$
+
+  <h3>Permeabilidad y Permitividad</h3>
+  <table>
+    <tbody>
+      <tr>
+        <th>Permitividad</th>
+        <td>$$ \epsilon_0 = 8.85 \cdot 10^{-12} \left[\frac{F}{m}\right] \text{ o } \left[\frac{C^2}{N \cdot m^2}\right] $$</td>
+      </tr>
+
+      <tr>
+        <th>Permeabilidad</th>
+        <td>$$ \mu_0 = 4 \pi \cdot 10^{-7} \left[ \frac{N}{A^2} \right] $$</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <p>
+      $$ c^2 = \frac{1}{\mu_0 \cdot \epsilon_0} $$
+    </p>
+  </div>
+
+  <h3>Ecuaciones de Maxwell</h3>
+  <div>
+    <table>
+      <tbody>
+        <tr>
+          <th>
+            Gauss
+          </th>
+          <td>
+            $$
+            \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
+            $$
+          </td>
+        </tr>
+        <tr>
+          <th>Gauss para B</th>
+          <td>
+            $$
+            \nabla \cdot \vec{B} = 0
+            $$
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Faraday-Henry
+          </th>
+          <td>
+            $$
+              \nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+            $$
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Ampere-Maxwell
+          </th>
+          <td>
+            $$
+              \nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
+            $$
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Polarización</h3>
+  <div>
+    <p>
+      Es la dirección del Campo Eléctrico.
+    </p>
+
+    <p>
+      Se llama <strong>polarización lineal</strong> cuando la onda no gira a medida avanza, es decir
+      tiene un eje o bien tiene dos o más pero en fase.
+    </p>
+
+    <p>
+      Se llama <strong>polarización circular</strong> cuando tiene dos ejes que están en
+      desfase de $\frac{pi}{4}$.
+    </p>
+
+    <p>
+      En otro caso de desfase distinto a $\frac{pi}{4}$ se le llama <strong>polarización elíptica</strong>.
+    </p>
+  </div>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</body>
+</html>
